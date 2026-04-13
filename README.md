@@ -3,18 +3,33 @@ A little trivia game with random transformers facts
 
 Date Started: April 8, 2026
 
-#Authorship
+# Authorship
 Code was developed by Tylan Miller
 Tools: HTML5, CSS3, JavaScript, Bootstrap 5.0.2
 Images sourced from TFWiki along information
 
 All characters belong to Hasbro
 
-#Game Objective
+# Game Objective
 Testing a player's knowledge in Transformers media 
 
-#Game info
+# Game info
 Easy Mode: 5 Questions
 Hard Mode: 10 Questions
 
 Hard Mode scores more points
+
+EASTER EGG
+Type in Autobot or Decepticon as a username
+
+# Links
+Repo: https://github.com/TMill3838/trivia-html-project
+Page: https://tmill3838.github.io/trivia-html-project/
+Dev Page: https://github.com/TMill3838
+HTML Validator: https://validator.w3.org/nu/?doc=https://tmill3838.github.io/trivia-html-project/
+WAVE Checker: https://wave.webaim.org/report#/https://tmill3838.github.io/trivia-html-project/
+
+```js
+
+```
+
