@@ -30,6 +30,14 @@ HTML Validator: https://validator.w3.org/nu/?doc=https://tmill3838.github.io/tri
 WAVE Checker: https://wave.webaim.org/report#/https://tmill3838.github.io/trivia-html-project/
 
 ```js
+ const body = document.body;
+        body.classList.remove('theme-autobot', 'theme-decepticon');
 
+        if (currentPlayer.toLowerCase() === "autobot") {
+            body.classList.add('theme-autobot');
+        } else if (currentPlayer.toLowerCase() === "decepticon") {
+            body.classList.add('theme-decepticon');
+        }
 ```
+This snippet of code allows for the user to input a specific set of words to triggr a change in colors for the interface.
 
