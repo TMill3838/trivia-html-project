@@ -18,4 +18,3 @@ Easy Mode: 5 Questions
 Hard Mode: 10 Questions
 
 Hard Mode scores more points
-
