@@ -21,12 +21,14 @@ const restartBtn = document.getElementById("restart-btn");
 
 export function startGame(playerName, difficulty) {
 
+    document.getElementById("login-form").style.display = "none";
+
     formEl.style.display = "none";
     gameDiv.style.display = "block";
 
 
     document.getElementById("display-name").textContent = playerName;
-    statusEl.textContent = `Autobots, roll out! Good luck, ${playerName}.`;
+    statusEl.textContent = `Roll out & good luck, ${playerName}!`;
     restartBtn.style.display = "none";
 
     currentQuestionIndex = 0;
@@ -103,9 +105,20 @@ function endGame() {
     questionEl.textContent = "Game Over!";
     answersEl.innerHTML = `<p>Your final score: ${score}</p>`;
     restartBtn.style.display = "block";
+
+    const currentData = loadData();
+    if (score > currentData.highScore) {
+        currentData.highScore = score;
+        saveData(currentData);
+        answersEl.innerHTML += `<p class="text-success mt-3 orbitron">New High Score: ${score}!</p>`;
+    } else {
+        answersEl.innerHTML += `<p class="text-info mt-3 orbitron">High Score: ${currentData.highScore}</p>`;
+    }
 }
 
 export function goToMenu() {
+
+    document.getElementById("login-form").style.display = "flex";
 
     gameDiv.style.display = "none";
     restartBtn.style.display = "none";

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/cyber-style.css">
 </head>
+
 <body class="bg-dark text-light">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-primary mb-5">
@@ -26,12 +28,29 @@
             <div class="col-md-8">
                 <div class="card bg-secondary text-white border-primary shadow-lg">
                     <div class="card-body p-5 text-center">
-                        
+
                         <p id="status" class="mb-4 text-info orbitron" aria-live="polite"></p>
+
+                        <form id="login-form" class="row g-3 mb-4 justify-content-center">
+                            <div class="col-md-5">
+                                <input type="text" id="login-username" class="form-control" placeholder="Username"
+                                    required>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="password" id="login-password" class="form-control" placeholder="Password"
+                                    required>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="submit" class="btn btn-danger w-100">Login</button>
+                            </div>
+                            <div class="col-12 text-danger mt-2" id="login-error" style="display: none;">Invalid
+                                credentials!</div>
+                        </form>
 
                         <form id="settings-form" class="row g-3">
                             <div class="col-md-6">
-                                <input type="text" id="player-name" class="form-control" placeholder="Enter name" required minlength="2">
+                                <input type="text" id="player-name" class="form-control" placeholder="Enter name"
+                                    required minlength="2">
                             </div>
                             <div class="col-md-4">
                                 <select id="difficulty" class="form-select" required>
@@ -45,10 +64,10 @@
                             </div>
                         </form>
 
-                        <div id="game" style="display: none;">
+                        <div id="game">
                             <h3 id="question" class="mb-4"></h3>
                             <div id="answers" class="row g-3 justify-content-center">
-                                </div>
+                            </div>
                         </div>
 
                     </div>
@@ -58,27 +77,33 @@
     </main>
 
     <footer class="container py-4 mt-5 border-top border-secondary">
-    <div class="row text-center text-md-start">
-        <div class="col-md-6 mb-3 mb-md-0">
-            <p class="orbitron fs-6 mb-1 text-primary">Developer Hub</p>
-            <a href="https://github.com/TMill3838" target="_blank" class="link-light me-3 small text-decoration-none hover-glow">Dev Profile</a>
-            <a href="https://github.com/TMill3838" target="_blank" class="link-light me-3 small text-decoration-none hover-glow">GitHub</a>
-            <a href="https://github.com/TMill3838/trivia-html-project" target="_blank" class="link-light small text-decoration-none hover-glow">Game Repo</a>
-        </div>
+        <div class="row text-center text-md-start">
+            <div class="col-md-6 mb-3 mb-md-0">
+                <p class="orbitron fs-6 mb-1 text-primary">Developer Hub</p>
+                <a href="https://github.com/TMill3838" target="_blank"
+                    class="link-light me-3 small text-decoration-none hover-glow">Dev Profile</a>
+                <a href="https://github.com/TMill3838" target="_blank"
+                    class="link-light me-3 small text-decoration-none hover-glow">GitHub</a>
+                <a href="https://github.com/TMill3838/trivia-html-project" target="_blank"
+                    class="link-light small text-decoration-none hover-glow">Game Repo</a>
+            </div>
 
-        <div class="col-md-6 text-md-end">
-            <p class="orbitron fs-6 mb-1 text-warning">Compliance</p>
-            <a href="https://validator.w3.org/nu/?level=warning&doc=https%3A%2F%2Ftmill3838.github.io%2Ftrivia-html-project%2F" target="_blank" class="link-light me-3 small text-decoration-none hover-glow">HTML Validator</a>
-            <a href="https://wave.webaim.org/report#/https://tmill3838.github.io/trivia-html-project/" target="_blank" class="link-light small text-decoration-none hover-glow">WAVE Checker</a>
+            <div class="col-md-6 text-md-end">
+                <p class="orbitron fs-6 mb-1 text-warning">Compliance</p>
+                <a href="https://validator.w3.org/nu/?level=warning&doc=https%3A%2F%2Ftmill3838.github.io%2Ftrivia-html-project%2F"
+                    target="_blank" class="link-light me-3 small text-decoration-none hover-glow">HTML Validator</a>
+                <a href="https://wave.webaim.org/report#/https://tmill3838.github.io/trivia-html-project/"
+                    target="_blank" class="link-light small text-decoration-none hover-glow">WAVE Checker</a>
+            </div>
         </div>
-    </div>
-    <div class="row mt-3">
-        <div class="col text-center text-muted small">
-            <p>&copy; 2026 Transformers Trivia Project</p>
+        <div class="row mt-3">
+            <div class="col text-center text-muted small">
+                <p>&copy; 2026 Transformers Trivia Project</p>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
     <script type="module" src="./scripts/main.js"></script>
 </body>
+
 </html>

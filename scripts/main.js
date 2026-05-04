@@ -1,4 +1,12 @@
 import { startGame, goToMenu } from "./trivia.js";
+import { initLogin } from "./login.js";
+
+document.addEventListener("DOMContentLoaded", () => {
+    initLogin(); 
+
+    const form = document.getElementById("settings-form");
+    const restartBtn = document.getElementById("restart-btn");
+});
 
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("settings-form");
