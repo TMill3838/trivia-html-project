@@ -52,6 +52,12 @@ WAVE Checker: https://wave.webaim.org/report#/https://tmill3838.github.io/trivia
 # ⚠️Concerns
 I have discvoered that the GCP link to my repository does not save any recent changes made prior to the GitHub link. This may cause for an outdated webpage to be loaded instead of the updated webpage.
 
+I have failed to correct the issue as it seems to have provided some problems with updating the GCP Github link. I refollowed the steps on the fix however the link did not update.
+
+The error being I could not delete my cloned GitHub link despite redoing the steps.
+
+I apologize in advance for not being able to correct this issue.
+
 # ⌨️Code Snippets
 
 ```js
