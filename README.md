@@ -49,6 +49,9 @@ HTML Validator: https://validator.w3.org/nu/?doc=https://tmill3838.github.io/tri
 
 WAVE Checker: https://wave.webaim.org/report#/https://tmill3838.github.io/trivia-html-project/
 
+# ⚠️Concerns
+I have discvoered that the GCP link to my repository does not save any recent changes made prior to the GitHub link 
+
 ```js
  const body = document.body;
         body.classList.remove('theme-autobot', 'theme-decepticon');
