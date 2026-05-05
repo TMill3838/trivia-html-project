@@ -14,7 +14,7 @@ export function initLogin() {
         const pass = document.getElementById("login-password").value;
 
         
-        const isMegatron = (user === "Megatron" && pass === "PeaceThroughTyranny");
+        const isMegatron = (user === "Decepticon" && pass === "PeaceThroughTyranny");
         const isAutobot = (user === "Autobot" && pass === "TillAllAreOne");
 
         if (isMegatron || isAutobot) {
