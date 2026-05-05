@@ -41,7 +41,14 @@ export function startGame(playerName, difficulty) {
     const limit = (difficulty === "hard") ? 10 : 5;
     gameQuestions = shuffled.slice(0, limit);
 
-    saveData({ player: playerName, highScore: 0, difficulty: difficulty });
+    const existingData = loadData();
+
+    
+    saveData({ 
+        player: playerName, 
+        highScore: existingData.highScore, 
+        difficulty: difficulty 
+    });
 
     shuffleQuestions();
     showQuestion();
@@ -117,17 +124,25 @@ function endGame() {
 }
 
 export function goToMenu() {
-
+    
     document.getElementById("login-form").style.display = "flex";
 
+    
+    formEl.style.display = "flex"; 
+
+    
     gameDiv.style.display = "none";
     restartBtn.style.display = "none";
 
+    
+    document.getElementById("login-username").value = "";
+    document.getElementById("login-password").value = "";
+    document.getElementById("player-name").value = "";
+    
+    
+    document.getElementById("login-error").style.display = "none";
 
-    formEl.style.display = "block";
-
-
+    
     statusEl.textContent = "";
-
     document.body.classList.remove('theme-autobot', 'theme-decepticon');
 }

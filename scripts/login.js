@@ -29,9 +29,9 @@ export function initLogin() {
             
             const savedData = loadData();
             if (isMegatron) {
-                statusEl.textContent = `Welcome back, Lord Megatron. High Score: ${savedData.highScore}`;
+                statusEl.textContent = `Welcome back, Mighty Decepticon. High Score: ${savedData.highScore}`;
             } else {
-                statusEl.textContent = `Welcome back, Autobot. High Score: ${savedData.highScore}`;
+                statusEl.textContent = `Welcome back, Heroic Autobot. High Score: ${savedData.highScore}`;
             }
         } else {
             errorMsg.style.display = "block";
