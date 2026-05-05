@@ -50,7 +50,7 @@ HTML Validator: https://validator.w3.org/nu/?doc=https://tmill3838.github.io/tri
 WAVE Checker: https://wave.webaim.org/report#/https://tmill3838.github.io/trivia-html-project/
 
 # ⚠️Concerns
-I have discvoered that the GCP link to my repository does not save any recent changes made prior to the GitHub link. This may cause for an outdated webpage to be loaded instead of the nwewest file.
+I have discvoered that the GCP link to my repository does not save any recent changes made prior to the GitHub link. This may cause for an outdated webpage to be loaded instead of the updated webpage.
 
 # ⌨️Code Snippets
 
