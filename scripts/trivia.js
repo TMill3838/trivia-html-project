@@ -126,8 +126,6 @@ function endGame() {
 export function goToMenu() {
     
     document.getElementById("login-form").style.display = "flex";
-
-    
     formEl.style.display = "flex"; 
 
     
@@ -137,7 +135,11 @@ export function goToMenu() {
     
     document.getElementById("login-username").value = "";
     document.getElementById("login-password").value = "";
-    document.getElementById("player-name").value = "";
+    
+    
+    const playerNameInput = document.getElementById("player-name");
+    playerNameInput.value = "";
+    playerNameInput.readOnly = false; 
     
     
     document.getElementById("login-error").style.display = "none";
