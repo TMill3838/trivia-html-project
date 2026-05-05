@@ -4,11 +4,13 @@ A little trivia game with random transformers with an easy and hard mode now fea
 Date Started: April 8, 2026
 
 # 📃Authorship
-Code was developed by Tylan Miller
+Code was developed by <a href="https://github.com/TMill3838">Tylan Miller</a>
 Tools: HTML5, CSS3, JavaScript, Bootstrap 5.0.2
 Images sourced from TFWiki along information
 
 ©️ All characters belong to Hasbro
+
+
 
 # 👾Game Objective
 Testing a player's knowledge in Transformers media 
@@ -22,6 +24,9 @@ Easy Mode: 5 Questions
 Hard Mode: 10 Questions
 
 Hard Mode scores more points
+
+# ❗Changes
+A login feature was installed
 
 # 🥚EASTER EGG
 Type in Autobot or Decepticon as a username
